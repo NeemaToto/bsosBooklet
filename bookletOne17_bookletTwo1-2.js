@@ -81,8 +81,75 @@ var sentence=`The Toyota Corolla Hybrid is in ${toyotaCorollaHybrid.mode[0]} mod
 console.log(sentence);
 
 //17-8
+var home = new Object();
 
+home.pets = [
+    petOne = {
+        name: "Max",
+        type: "Guinea Pig",
+        age: 6,
+        lifeSpan: 8
+    },
+    petTwo = {
+        name: "Mickey",
+        type: "Budgie",
+        age: 4,
+        lifeSpan: 8
+    }
+]
 
+console.dir(home);
+console.log(`The second pets name is ${home.pets[1].name} and he is ${home.pets[1].age} years old.`)
+
+//17-9
+var home = new Object();
+
+home.textBooks = [
+    textBookOne = {
+        title: `Design Pattern Elements of Reusable Object-Oriented Software`,
+        authors: {"list" : ["Enrich Gamma", "Richard Helm", "Ralph Johnson", "John Vlisides"]},
+        releaseDate: 1994
+    },
+    textBookTwo = {
+        title: `Step by Step`,
+        authors: {"list" : ["Steve Suehring"]} ,
+        releaseDate: 2010
+    }
+]
+
+console.dir(home.textBooks);
+console.log(home.textBooks[0]);
+console.log(home.textBooks[0].authors);
+console.log(home.textBooks[0].authors[3]);
+
+//You made a typo in the workbook where you want us to call the authors and release date of textbook one even though in the console log below we're talking about textbook 2.
+console.log(`I will read JavaScript ${home.textBooks[1].title}. The author of the textbook is ${home.textBooks[1].authors}. It was released in ${home.textBooks[1].releaseDate}`);
+
+//17-10
+var microsoft = new Object();
+
+microsoft.laptopTypes = [
+    laptopOne = {
+        laptop: "Laptop 4",
+        screenInches: 13.4,
+        memoryGb: 16,
+        batteryLifeHours: 19,
+        processor: "Quad Core 10th Intel Core i7-1185G7"
+    },
+    laptopTwo = {
+        laptop: "Laptop 3",
+        screenInches: 13.5,
+        memoryGb: 16,
+        batteryLifeHours: 11.1,
+        processor: "Quad Core 10th Intel Core i7-1065G7"
+    }
+]
+
+var firstSentence = `Laptop number one is the Microsoft ${microsoft.laptopTypes[0].laptop}. It has a screen that is ${microsoft.laptopTypes[0].screenInches} inches.`;
+var secondSentence = `Laptop number two is the Microsft ${microsoft.laptopTypes[1].laptop}. It has a screen that is ${microsoft.laptopTypes[1].screenInches} inches.`;
+
+console.log(firstSentence);
+console.log(secondSentence);
 
 //Booklet 2
 
