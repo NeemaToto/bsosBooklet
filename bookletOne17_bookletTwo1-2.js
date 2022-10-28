@@ -7,7 +7,7 @@ var student = {
     firstName: "John",
     lastName: "Doe",
     age: 22,
-    gpa:4.0
+    gpa: 4.0
 }
 
 var sentence = `${student.firstName} ${student.lastName} is ${student.age} years old and has a ${student.gpa} GPA.`;
@@ -76,7 +76,7 @@ toyotaCorollaHybrid.cylinder = 4;
 
 console.dir(toyotaCorollaHybrid);
 
-var sentence=`The Toyota Corolla Hybrid is in ${toyotaCorollaHybrid.mode[0]} mode and can carry up to ${toyotaCorollaHybrid.litre} litres.`;
+var sentence = `The Toyota Corolla Hybrid is in ${toyotaCorollaHybrid.mode[0]} mode and can carry up to ${toyotaCorollaHybrid.litre} litres.`;
 
 console.log(sentence);
 
@@ -107,12 +107,12 @@ var home = new Object();
 home.textBooks = [
     textBookOne = {
         title: `Design Pattern Elements of Reusable Object-Oriented Software`,
-        authors: {"list" : ["Enrich Gamma", "Richard Helm", "Ralph Johnson", "John Vlisides"]},
+        authors: { "list": ["Enrich Gamma", "Richard Helm", "Ralph Johnson", "John Vlisides"] },
         releaseDate: 1994
     },
     textBookTwo = {
         title: `Step by Step`,
-        authors: {"list" : ["Steve Suehring"]} ,
+        authors: { "list": ["Steve Suehring"] },
         releaseDate: 2010
     }
 ]
@@ -291,7 +291,7 @@ var message = ``;
 try {
     if (person.length == 0) {
         throw `empty`;
-    } 
+    }
     if (person.name == "Bob") {
         console.log(`Message matched.`)
     }
@@ -310,7 +310,7 @@ try {
     if (person == "Bob") {
         console.log(`Message matched.`)
     }
-}catch(err) {
+} catch (err) {
     console.log(`The person variable is ${err}`);
 } finally {
     console.log(`Finished checking.`);
