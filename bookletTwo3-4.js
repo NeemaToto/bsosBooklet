@@ -30,7 +30,7 @@ var text = ``;
 
 for (var i = 0; i < 7; i++) {
     if (i == 5) {
-        text = `Finished`;
+        text += `Finished`;
         break;
     }
 }
@@ -39,7 +39,7 @@ console.log(`${text} at the number 5`);
 
 //3-1-6
 for (var i = 0;  i < 10; i++) {
-    if ((i % 2) ==  1) {
+    if (i % 2 ==  1) {
         i +=3;
     }
     console.log(i);
@@ -71,22 +71,22 @@ for (var i = 0; i < 10; i++) {
 
 console.log(`${text} at the number ${i}`);
 
-//3-1-9 ***
+//3-1-9 
 var text = ``;
 
 for (var i = 0; i < 10; i++) {
-    if (!((i % 2) == 0) && i == 1) {
+    if (i % 2 == 1) {
         console.log(`Not divisible by 2. The number is ${i}.`);
     }
 }
 
 console.log(`Finished loop.`);
 
-//3-1-10 ***
+//3-1-10
 var text = ``;
 
 for (var i = 0; i < 10; i++) {
-    if (!((i % 3) == 0)) {
+    if (i % 3 == 1 || i % 3 == 2) {
         console.log(`Not divisible by 3. The number is ${i}.`);
     }
 }
