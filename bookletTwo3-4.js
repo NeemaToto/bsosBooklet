@@ -51,7 +51,7 @@ var person = `bob`;
 
 for (var i = 0; i < 10; i++) {
     if (i == 4 && person == `bob`) {
-        console.log(`The person ${person} has been selected`);
+        console.log(`The person ${person.charAt(0).toUpperCase() + person.slice(1)} has been selected`);
         break;
     }
 }
@@ -94,22 +94,32 @@ for (var i = 0; i < 10; i++) {
 console.log(`Finished Loop`);
 
 //3-1-11
-/**var text = ``;
+ext = ``;
 
 for (var i = 0; i < 10; i++) {
-
+    if (i % 3 == 1 || i % 3 == 2) {
+        console.log(`Not divisible by 3. The number is ${i}`);
+    } else if (i % 2 == 1) {
+        console.log(`Not divisible by 2. The number is ${i}`);
+    } else {
+        console.log(`It is divisible 2 and 3. The number is ${i}`);
+    }
 }
-**/
+
+console.log(`Finished the loop.`);
+
 //3-1-12
 var drinks = [`pepsi`, `cola`, `orange juice`, `water`];
 var num = 0;
 
 for (var i = 0; i < 10; i++) {
-    if (drinks[1] == `cola`) {
-        console.log(`test`);
+    if (drinks[i] == `cola`) {
+        num = i + 1;
+        console.log(`Cola is in the ${num} position`);
+        break;
     }
 }
-console.log(`didnt work`);
+console.log(`Finished Loop`);
 
 //3-1-13 
 var text = ``;
@@ -150,8 +160,11 @@ for (var i = 0; i < 10; i++) {
         console.log(`________`);
     } else if (i == 5) {
         i = 11;
-        console.log(`Finished at the number ${i}`);
     }
 }
+
+console.log(`Finished at the number ${i}`);
+
+
 
 
