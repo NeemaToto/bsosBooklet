@@ -231,3 +231,15 @@ var obj = JSON.parse(json);
 console.log(`${obj.name} is ${obj.age} years old and he lives in the ${obj.country}.`);
 
 //8-6
+var json = '{"firstName: "John", "lastName": "Franco", "employeeId": "A0012345"}';
+var obj = JSON.parse(json);
+
+console.log(`${obj.firstName} ${obj.lastName}'s employee ID is ${obj.employeeID}.`);
+
+//8-7
+var json = '{"name": "Kelly", "age": 18, "country": "United States"}';
+var obj = JSON.parse(json);
+
+if (obj.age > 20) {
+    console.log(`${obj.name} lives on his own.`)
+}
