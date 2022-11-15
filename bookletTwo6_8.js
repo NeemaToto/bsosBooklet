@@ -241,5 +241,7 @@ var json = '{"name": "Kelly", "age": 18, "country": "United States"}';
 var obj = JSON.parse(json);
 
 if (obj.age > 20) {
-    console.log(`${obj.name} lives on his own.`)
+    console.log(`${obj.name} lives on his own.`);
+} else {
+    console.log(`${obj.name} lives with his parents.`);
 }
